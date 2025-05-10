@@ -27,6 +27,13 @@ class UserRepository implements IUser
         return auth()->user(); 
     }
 
+
+    public function getAnotherUser($userId)
+    {
+        return User::where('user_id',$userId)->first();
+    }
+
+
     
 
    

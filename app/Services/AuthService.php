@@ -109,6 +109,11 @@ class AuthService implements IAuthService
         }
     }
 
+    public function getAnotherUser($userId)
+    {
+        return $this->userRepo->getAnotherUser($userId);
+    }
+
 }
 
 

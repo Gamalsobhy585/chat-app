@@ -9,6 +9,8 @@ interface IAuthService
     public function logout($request);
     public function updateoldPassword($email, $oldPassword, $newPassword);
     public function getUserInfo($request);
+    public function getAnotherUser($userId);
+
 
 
 }

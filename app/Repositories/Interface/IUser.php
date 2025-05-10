@@ -8,6 +8,7 @@ interface IUser
     public function store($model);
     public function update($model);
     public function getUserInfo();
+    public function getAnotherUser($userId);
 
 
 }
